@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>YukBelajar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #18DFD5, #ffffff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin-top: 20px;
+        }
+        .container {
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+           
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+        .nav {
+            display: flex;
+            gap: 40px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .nav a.active {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex; /* Membuat tata letak horizontal */
+            align-items: center; /* Rata tengah secara vertikal */
+            justify-content: center; /* Rata tengah horizontal */
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 80px;
+            gap: 100px; /* Atur jarak antara gambar dan teks */
+            padding: 20px;
+        }
+        .content img {
+            width: 535px;
+            height: 535px; /* Sesuaikan ukuran gambar */
+            height: auto;
+        }
+        .text-content {
+            width: 500px;
+            height: 400px;/* Batasi lebar teks agar seimbang dengan gambar */
+        }
+        .text-content h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom:100px; /* Kurangi jarak bawah judul utama */
+        }
+        .text-content h3 {
+            font-size: 24px;
+            margin-bottom: 5px; /* Kurangi jarak bawah subjudul */
+        }
+        .text-content p {
+            font-size: 18px;
+            margin-bottom: 10px; /* Kurangi jarak bawah paragraf */
+        }
+        @media (max-width: 535px) {
+            .content {
+                flex-direction: column; /* Tata letak vertikal di layar kecil */
+                align-items: center;
+            }
+            .content img, .text-content {
+                max-width: 100%; /* Gambar dan teks memenuhi layar */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            YUKBELAJAR!!!
+        </div>
+        <div class="nav">
+            <a href="index.html">
+                <i class="home"></i>HOME</a>
+            <a class="active" href="about.html">
+                <i class="about"></i> ABOUT</a>
+            <a href="contactus.html">CONTACT US</a>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Gambar -->
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player
+            src="https://lottie.host/60705b5e-f403-46b3-ad3c-434b554a52d5/FGV7eOdRtN.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 500px; height: 500px"
+            loop
+            autoplay></dotlottie-player>
+        <!-- Konten Teks -->
+        <div class="text-content">
+            <h2>About</h2>
+            <h3>Make your future brighter</h3>
+            <p>lakwdllawdaldklawdlkjwdiw</p>
+            <h3>We are Online</h3>
+            <p>wduwhdwuhdawjdoiajwdawdu</p>
+        </div>
+    </div>
+</body>
+</html>
