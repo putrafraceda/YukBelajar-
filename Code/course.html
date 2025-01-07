@@ -1,0 +1,275 @@
+<html>
+    <head>
+        <title>YUKBELAJAR!!!</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 60px;
+        }
+        .sidebar a {
+            display: flex;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 18px;
+            margin-left: 50px;
+            margin-top: 20px ;
+        }
+        .sidebar a:hover {
+            color: #00d8ff;
+        }
+        .sidebar a.active{
+            color:#00d8ff;
+        }
+        .sidebar .resume {
+            margin-top: 40px;
+        }
+        .sidebar .resume h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .sidebar .resume .progress {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .sidebar .resume .progress-bar {
+            width: 80%;
+            height: 5px;
+            background-color: #e0e0e0;
+            position: relative;
+        }
+        .sidebar .resume .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 10%;
+            background-color: black;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header input {
+            width: 900px;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .header .icons {
+            display: flex;
+            align-items: center;
+        }
+        .header .icons i {
+            font-size: 24px;
+            margin-left: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .main-content .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-content .courses .course {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(30% - 20px);
+            box-sizing: border-box;
+        }
+        .main-content .courses .course img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .main-content .courses .course h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .main-content .courses .course .progress {
+            height: 2px;
+            background-color: #000;
+            margin: 5px 0;
+        }
+        .main-content .courses .course .progress span {
+            display: block;
+            height: 100%;
+            background-color: #00d1c1;
+        }
+        .main-content .courses .course .read-now {
+            background-color: #00d1c1;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .main-content .courses .course {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .main-content .courses .course {
+                width: 100%;
+            }
+        }
+        </style>
+        </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <h1>YUKBELAJAR!!!</h1>
+                    <a href="home.html">Home</a>
+                    <a class="active" href="#">Courses</a>
+                    <a href="lesson.html">Lessons</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a href="soal.html">Soal</a>
+        <div class="resume">
+                <h2>Resume</h2>
+            <div class="progress">
+                <span>Tubuh dan Panca Indra</span>
+                <span>1/5</span>
+                <span>10%</span>
+             </div>
+         <div class="progress-bar">
+    
+         </div>
+            <div class="progress">
+                <span>Kegiatan Ekonomi</span>
+                <span>1/5</span>
+                <span>10%</span>
+            </div>
+         <div class="progress-bar">
+         
+        </div>
+            <div class="progress">
+                <span>Lapisan Bumi</span>
+                <span>1/5</span>
+                <span>10%</span>
+            </div>
+        <div class="progress-bar">
+            </div>
+        </div>
+        </div>
+       <div class="main-content">
+        <div class="header">
+         <input placeholder="Search" type="text"/>
+         <div class="icons">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-user-circle"></i>
+          <span>Login</span>
+         </div>
+        </div>
+        <h2> Choose your Course<span style="color: #00d1c1;"> 5</span></h2>
+           <div class="courses">
+            <div class="course">
+             <img alt="Ilmu Pengetahuan Alam" height="150" src="https://storage.googleapis.com/a1aa/image/cJxqoIQ8fwUbA6Uy9vSh0AOT2Nf4N9GbNuvbAVag0DzBJsenA.jpg" width="300"/>
+                <h3>Ilmu Pengetahuan Alam</h3>
+             <div class="progress">
+              <span style="width: 10%;"></span>
+             </div>
+             <p>1/6 10%</p>
+             <a class="read-now" href="courseIPA.html">Read Now</a>
+            </div>
+            <div class="course">
+             <img alt="Ilmu Pengetahuan Sosial" height="150" src="https://storage.googleapis.com/a1aa/image/o9ro2dfwtuUVMKCpCJcCrlsPAox8uLstdk0zdNKzGzvjEWfTA.jpg" width="300"/>
+             <h3>
+              Ilmu Pengetahuan Sosial
+             </h3>
+             <div class="progress">
+              <span style="width: 10%;">
+              </span>
+             </div>
+             <p>
+              1/6 10%
+             </p>
+             <a class="read-now" href="#">
+              Read Now
+             </a>
+            </div>
+            <div class="course">
+             <img alt="Bahasa Indonesia" height="150" src="https://storage.googleapis.com/a1aa/image/NFO41HZ3OHJWIdIXSeeH0xImCxbFUNz2uBZHOVfVdPNRSY9nA.jpg" width="300"/>
+             <h3>
+              Bahasa Indonesia
+             </h3>
+             <div class="progress">
+              <span style="width: 10%;">
+              </span>
+             </div>
+             <p>
+              1/6 10%
+             </p>
+             <a class="read-now" href="#">
+              Read Now
+             </a>
+            </div>
+            <div class="course">
+             <img alt="Geografi" height="150" src="https://storage.googleapis.com/a1aa/image/jXVr75YoyD6rHlChJ31ZZGGfz9q7JhaZni18e6YdnNKDJsenA.jpg" width="300"/>
+             <h3>
+              Geografi
+             </h3>
+             <div class="progress">
+              <span style="width: 10%;">
+              </span>
+             </div>
+             <p>
+              1/6 10%
+             </p>
+             <a class="read-now" href="#">
+              Read Now
+             </a>
+            </div>
+            <div class="course">
+             <img alt="Bahasa Inggris" height="150" src="https://storage.googleapis.com/a1aa/image/txkLECm3LiZ7ApT3kXLZ9njqGtN8hazMtShRabe89xsiEWfTA.jpg" width="300"/>
+             <h3>
+              Bahasa Inggris
+             </h3>
+             <div class="progress">
+              <span style="width: 10%;">
+              </span>
+             </div>
+             <p>
+              1/7 10%
+             </p>
+             <a class="read-now" href="#">Read Now</a>
+               </div>
+           </div>
+        </div>
+    </body>
+</html>
+        

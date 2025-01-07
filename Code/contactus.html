@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>YukBelajar</title>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+        <style>
+            body {
+                    margin: 0;
+                    font-family: 'Roboto', sans-serif;
+                    background: linear-gradient(to right, #18DFD5, #ffffff);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    height: 100vh;
+                    margin-top: 20px;
+                }
+                .container {
+                    position: fixed;
+                    z-index: 1000;
+                    width: 100%;
+                    max-width: 1200px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px;
+                }
+                .logo {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #000;
+                }
+                .nav {
+                    display: flex;
+                    gap: 40px;
+                }
+                .nav a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .nav a:hover {
+                    text-decoration: underline;
+                }
+                .nav a.active {
+                    text-decoration: underline;
+                }
+                .nav a.active i {
+                    text-decoration: underline;
+                }
+                .content {
+                    width: 100%;
+                    max-width: 1200px; /* Untuk membatasi lebar maksimal */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center; /* Memusatkan elemen secara horizontal */
+                    align-items: center; /* Memusatkan elemen secara vertikal */
+                    margin: auto; /* Untuk memastikan elemen berada di tengah halaman */
+                    flex-wrap: wrap; /* Agar elemen dapat menyesuaikan layar kecil */
+                    height: calc(100vh - 80px); /* Gunakan tinggi penuh halaman, dikurangi navbar */
+                }
+                .form-container, .info-container {
+                    align-items: center;
+                    width: 48%;
+                }
+                .form-container input {
+                    width: 650px;
+                    height: 50px;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #e0f7fa80;
+                }
+                .form-container textarea{
+                    width: 650px;
+                    height: 100px;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #e0f7fa80;
+
+                }
+                .form-container button {
+                    width: 100px;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: #6200ea;
+                    color: #fff;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+                .info-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                .info-box {
+                    background: linear-gradient(to right, #ffffff80, #18DFD580);
+                    width: 300px;
+                    height: 100px;
+                    padding: 20px;
+                    justify-content: center;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .info-box i {
+                    font-size: 24px;
+                    color: #6200ea;
+                }
+                .info-box div {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .info-box div h3 {
+                    margin: 0;
+                    font-size: 18px;
+                    color: #000;
+                }
+                .info-box div p {
+                    margin: 0;
+                    font-size: 14px;
+                    color: #000;
+                }
+                @media (max-width: 768px) {
+                    .content {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .form-container, .info-container {
+                        width: 100%;
+                    }
+                }
+            </style>
+        </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                YUKBELAJAR!!!
+            </div>
+            <div class="nav">
+                <a href="index.html">
+                    <i class="home"></i>HOME</a>
+                <a href="about.html">
+                    <i class="ABOUT"></i>ABOUT</a>
+                <a class="active" href="#">
+                    <i class="contact"></i>CONTACT US</a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Contact US</h1>
+            <div class="form-container">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Name">
+                <textarea placeholder="Massage" rows="4"></textarea>
+                <button>Send</button>
+            </div>
+            <div class="info-container">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Bekasi City</h3>
+                        <p>Jl. Muara Mukti, 17450</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <p>(+62) 81212069486<br>Sir Traa</p>
+                        <p>(+62) 85772798809<br>Sir Jackson</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    

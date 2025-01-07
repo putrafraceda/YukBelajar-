@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>YukBelajar</title>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+     body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #18DFD5, #ffffff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin-top: 20px;
+        }
+        .container {
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+        .nav {
+            display: flex;
+            gap: 40px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .nav a.active {
+            text-decoration: underline;
+        }
+       
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-left: 90px;
+            margin-top: 100px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .text {
+            max-width: 50%;
+        }
+        .text h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 96px;
+            font-weight: bolder;
+            margin: 0;
+        }
+        .text h2 {
+            font-size: 64px;
+            font-weight: 500;
+            margin: 0;
+        }
+        .text p {
+            font-size: 28px;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #4a00e0;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #3a00b0;
+        }
+        .image {
+            max-width: 50%;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text, .image {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+     </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="logo">
+            YUKBELAJAR!!!
+        </div>
+        <div class="nav">
+            <a class="active" href="#">
+                <i class="home"></i>HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contactus.html">CONTACT US</a>
+        </div>
+    </div>
+  <div class="content">
+    <div class="text">
+            <h1><b>LEARNING</b></h1>
+            <h2>ONLINE</h2>
+            <p>prepare yourself and improve your knowledge to achieve a bright future</p>
+        <a class="button" href="home.html">Join Now</a>
+    </div>
+    <div class="image">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player   src="https://lottie.host/ffd9e735-6e4d-456a-8f06-4094471746ad/OQh2YR8uxp.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 535px; height: 535px"
+            loop
+            autoplay></dotlottie-player>
+   </div>
+  </div>
+ </body>
+</html>
